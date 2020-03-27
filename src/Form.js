@@ -14,7 +14,7 @@ const Form = () => {
         italianSausage: false,
         mushrooms: false,
         pineapple: false,
-        specialInstructions: false,
+        specialInstructions: '',
     });
 
     const [formErrors, setFormErrors] = useState({
