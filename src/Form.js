@@ -108,7 +108,7 @@ const Form = () => {
                     <input id='name' name='name' type='text' value={formState.name} onChange={updateOrder}/>
                     {formErrors.name ? <p className='error'>{formErrors.name}</p> : null}
                 </label>
-
+                {formErrors.name ? <p className="error">{formErrors.name}</p> : null}
                 <label htmlFor='size'>
                     <h5>Pizza Size</h5>
                     <select id='size' name='size' onChange={updateOrder}>
