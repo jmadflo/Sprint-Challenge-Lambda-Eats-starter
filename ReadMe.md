@@ -22,7 +22,7 @@ Form validation is a way of making sure that the user fills out our form with th
 
 3. In 1-2 sentences, define end to end testing.
 
-End to end testing is a way of checking whether or not your application behaves as you would expect by simulating a user using your app. You as the developer can then make sure that the application is responding in the intended way to the user's behavior.
+End to end testing is a way of checking whether or not your application behaves as you would expect by simulating a user using your app. You as the developer can then make sure that the application is responding in the intended way to the user's engagement with it.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section **will** prevent you from passing this challenge.
 
