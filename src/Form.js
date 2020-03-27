@@ -10,21 +10,16 @@ const Form = () => {
     const [formState, setFormState] = useState({
         name: '',
         size: 'Extra Large',
-        pepperoni: '',
-        italianSausage: '',
-        mushrooms: '',
-        pineapple: '',
-        specialInstructions: '',
+        pepperoni: false,
+        italianSausage: false,
+        mushrooms: false,
+        pineapple: false,
+        specialInstructions: false,
     });
 
     const [formErrors, setFormErrors] = useState({
         name: '',
-        size: '',
-        pepperoni: '',
-        italianSausage: '',
-        mushrooms: '',
-        pineapple: '',
-        specialInstructions: '',
+        
     });
 
     useEffect(() => {
