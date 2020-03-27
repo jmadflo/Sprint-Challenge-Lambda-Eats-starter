@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import * as yup from 'yup'
 import axios from 'axios'
+import { useHistory } from 'react-router-dom'
 
-const Form = () => {
-    const [order, setOrder] = useState([])
+const Form = ({order, setOrder}) => {
 
     const [disableButton, setDisableButton] = useState(true)
+    const history = useHistory()
 
     const [formState, setFormState] = useState({
         name: '',
@@ -19,7 +20,6 @@ const Form = () => {
 
     const [formErrors, setFormErrors] = useState({
         name: '',
-        
     });
 
     useEffect(() => {
@@ -89,7 +89,9 @@ const Form = () => {
                 mushrooms: '',
                 pineapple: '',
                 specialInstructions: ''
-            });
+            })
+            
+            history.push("/pizza/completed")
           })
           .catch(error => console.log("Order was not successful: ", error.response));
       };
@@ -141,7 +143,7 @@ const Form = () => {
 
                 <button id="submit" disabled={disableButton}>Add Order</button>
 
-                <pre>{JSON.stringify(order, null, 2)}</pre>
+                
             </form>
         </div>
     )
