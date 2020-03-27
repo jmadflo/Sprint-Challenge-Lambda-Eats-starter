@@ -9,7 +9,7 @@ const Form = () => {
 
     const [formState, setFormState] = useState({
         name: '',
-        size: '',
+        size: 'Extra Large',
         pepperoni: '',
         italianSausage: '',
         mushrooms: '',
